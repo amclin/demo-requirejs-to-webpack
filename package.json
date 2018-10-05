@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/zurb/amclin-demo-requirejs-to-webpack/issues"
   },
-  "homepage": "https://github.com/zurb/amclin-demo-requirejs-to-webpack#readme"
+  "homepage": "https://github.com/zurb/amclin-demo-requirejs-to-webpack#readme",
+  "dependencies": {
+    "requirejs": "^2.3.6"
+  }
 }

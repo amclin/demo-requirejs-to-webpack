@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <link rel='stylesheet' href='styles.css'/>
+        <script src='js/amd/manifest.js'></script>
+        <script data-main='entry' src='../node_modules/requirejs/require.js'></script>
+    </head>
+    <body>
+        <h1>AMD Example</h1>
+        <p>This file loads some example JS files as AMD modules using RequireJS.</p>
+        <div class='example inline'>
+            <h3>Inline Script</h3>
+            <p>Example of an inline script calling require() with dependencies defined in the manifest.</p>
+            <div class='output output-1'><span class='result unstarted'></span></div>
+            <div class='output output-2'><span class='result unstarted'></span></div>
+            <script>
+                require(['jquery', 'sampleData'], function(jQuery, sampleData) {
+                    // jQuery can be addressed as a local object
+                    var output1 = jQuery('.example.inline .output-1 .result');
+                    output1.removeClass('unstarted').addClass('success').html(sampleData.success);
+                    // Or using the global window.$
+                    var output2 = $('.example.inline .output-2 .result');
+                    output2.removeClass('unstarted').addClass('success').html(sampleData.success);
+                });
+            </script>
+        </div>
+        <div class='example entry'>
+            <h3>Entrypoint Script</h3>
+            <p>Example of running an entrypoint script call to require() with dependencies defined in the manifest.</p>
+            <div class='output output-1'><span class='result unstarted'></span></div>
+            <div class='output output-2'><span class='result unstarted'></span></div>
+        </div>
+        <div class='example async'>
+            <h3>Async Module</h3>
+            <p>Example of running an asynchronous module with dependencies defined in the manifest.</p>
+            <div class='output output-1'><span class='result unstarted'></span></div>
+            <div class='output output-2'><span class='result unstarted'></span></div>
+        </div>
+    </body>
+</html>

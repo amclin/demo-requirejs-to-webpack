@@ -1,0 +1,31 @@
+.output {
+    display: inline-block;
+    font-weight: bold;
+    height: 20px;
+    line-height: 20px;
+    margin: .5rem .5rem;
+    width: 20px;
+}
+
+.result::after {
+    content: 'x';
+    display: inline-block;
+    height: 100%;
+    text-align: center;
+    width: 100%;
+}
+
+.unstarted {
+    color: darkslategrey;
+    background-color: gray;
+}
+
+.success {
+    color: white;
+    background-color: green;
+}
+
+.error {
+    color: white;
+    background-color: red;
+}
