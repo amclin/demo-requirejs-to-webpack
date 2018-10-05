@@ -1,0 +1,26 @@
+{
+  "name": "demo-requirejs-to-webpack",
+  "version": "0.0.0",
+  "description": "Demo project converting from AMD require.js to CommonJS webpack",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zurb/amclin-demo-requirejs-to-webpack.git"
+  },
+  "keywords": [
+    "AMD",
+    "require.js",
+    "r.js",
+    "CommonJS",
+    "webpack"
+  ],
+  "author": "Anthony McLin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zurb/amclin-demo-requirejs-to-webpack/issues"
+  },
+  "homepage": "https://github.com/zurb/amclin-demo-requirejs-to-webpack#readme"
+}
