@@ -4,14 +4,14 @@ Demo project converting from AMD require.js to CommonJS webpack
 ## About
 This repo is to test the process of converting from an AMD-style project using RequireJS to a CommonJS-style project usig Webpack.
 
-![RequireJS](https://requirejs.org/) is not simply a bundler for JS projects. In fact, the primary use case is for dynamically loading JS files as modules. You can setup logic that only makes an HTTP request to get a JS file if the necessary JS runs in the browser to trigger it.
+[RequireJS](https://requirejs.org/) is not simply a bundler for JS projects. In fact, the primary use case is for dynamically loading JS files as modules. You can setup logic that only makes an HTTP request to get a JS file if the necessary JS runs in the browser to trigger it.
 
-![Webpack](https://webpack.js.org/) on the other hand is used to bundle multiple modules into a single file as a build step before deploying or running it.
+[Webpack](https://webpack.js.org/) on the other hand is used to bundle multiple modules into a single file as a build step before deploying or running it.
 
 ## Why?
-The RequireJS approach is well engineered, and ![crazy fast compared to webpack and other bundlers](https://nolanlawson.com/2016/08/15/the-cost-of-small-modules/). So why would we want to move away from it?
+The RequireJS approach is well engineered, and [crazy fast compared to webpack and other bundlers](https://nolanlawson.com/2016/08/15/the-cost-of-small-modules/). So why would we want to move away from it?
 
-There was a lot of upheval going on the Javascript ecosystem at the time RequireJS was released, and there were ![two competing approaches for how to handle modular Javascript](https://auth0.com/blog/javascript-module-systems-showdown/).
+There was a lot of upheval going on the Javascript ecosystem at the time RequireJS was released, and there were [two competing approaches for how to handle modular Javascript](https://auth0.com/blog/javascript-module-systems-showdown/).
 
 ### AMD
 AMD loading was designed to be ascyncronous, and so from the very start it was designed for AJAX loading that could gracefully prevent applications hanging while waiting for modules to load. RequireJS and Dojo implemented their dynamic loaders based on the AMD pattern.
@@ -28,8 +28,8 @@ Luckily, as of 2017, Javascript now how asyncronous dynamic loading as part of t
 This repo will start by stubbing out a simple Require.JS project approach with client side dynamic asyncronous includes. It will then parallel the steps necessary to run the same modules (without changes to the modules themselves) in a modern ES2015 approach.
 
 ### ToDo
-Investigate ![SystemJS](https://github.com/systemjs/systemjs) as an intermediary step to supporting both approaches during transition.
+Investigate [SystemJS](https://github.com/systemjs/systemjs) as an intermediary step to supporting both approaches during transition.
 
 ## Examples
 * View source code in {/src} for full details
-* AMD module loading can be tested in any browser by opening ![example.amd.html](src/example.amd.html)
+* AMD module loading can be tested in any browser by opening [example.amd.html](src/example.amd.html)
