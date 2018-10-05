@@ -30,6 +30,7 @@ This repo will start by stubbing out a simple Require.JS project approach with c
 ### ToDo
 Investigate [SystemJS](https://github.com/systemjs/systemjs) as an intermediary step to supporting both approaches during transition.
 
-## Examples
-* View source code in {/src} for full details
+## Running Examples
+* Check out this repo and install dependencies with NPM using `npm install`
+* View source code in `/src` for full details
 * AMD module loading can be tested in any browser by opening [example.amd.html](src/example.amd.html)
